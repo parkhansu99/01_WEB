@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS3 Selector Basic</title>
+        <style>
+            .select {
+                color: red;
+            }
+            .item {
+                color: red;
+            }
+            .header {
+                background-color: blue;
+            }
+            input[type='text'] {
+                background: red;
+            }
+            input[type='password'] {
+                background: blue;
+            }
+            #header > h1 {
+                color: red;
+            }
+            #section > h1 {
+                color: orange;
+            }
+            #header h1,
+            h2 {
+                color: red;
+            }
+            #header h1,
+            #header h2 {
+                color: red;
+            }
+            h6:hover {
+                color: red;
+            }
+            h6:active {
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li class="select">사과</li>
+            <li>바나나</li>
+            <li class="select">오렌지</li>
+            <li>감</li>
+        </ul>
+        <h2 class="item header">동해물과 백두산이</h2>
+        <form>
+            <input type="text" />
+            <input type="password" />
+        </form>
+        <div id="header">
+            <h1 class="title">Lorem ipsum</h1>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <div id="nav">
+                <h1>Navigation</h1>
+            </div>
+        </div>
+        <div id="section">
+            <h1 class="title">Lorem ipsum</h1>
+            <p>Lorem ipsum dolor sit amet , consectetur adipiscing elit .</p>
+        </div>
+        <h6>반응 선택자</h6>
+    </body>
+</html>
